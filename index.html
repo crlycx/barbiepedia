@@ -1,69 +1,109 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbiepedia &hearts;</title>
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="public/styles.css">
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Mali&display=swap" rel="stylesheet">
-    <!-- font awesome kit -->
-    <script src="https://kit.fontawesome.com/28bd3deec2.js"></script>
-  </head>
-  <body>
 
-    <section id="navigation">
+<head>
+  <meta charset="utf-8">
+  <!-- viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbiepedia &hearts;</title>
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="public/styles.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand&display=swap" rel="stylesheet">
+  <!-- font awesome kit -->
+  <script src="https://kit.fontawesome.com/28bd3deec2.js"></script>
+</head>
 
-      <nav class="navigation">
+<body>
 
-        <div class="nav-logo">
-          <i class="fas fa-heart fa-2x"></i>
-        </div>
+  <section id="navigation">
 
-        <div class="nav-item">
-          <a href="#content">Home</a>
-        </div>
+    <nav class="navigation">
 
-        <div class="nav-item">
-          <a href="#submit">Submit</a>
-        </div>
-
-        <div class="nav-item">
-          <a href="#footer">Contact</a>
-        </div>
-
-
-      </nav>
-    </section>
-
-    <section id="content">
-
-      <div class="content-box">
-        <img class="barbie-logo" src="images/barbie-logo-transparent.png" alt="Barbie Logo">
-        <!-- drop down -->
-        <select class="topics" name="topics">
-          <option value="family">Family</option>
-          <option value="pets">Pets</option>
-          <option value="jobs">Jobs</option>
-          <option value="movies/tv">Movies/TV</option>
-          <option value="games">Games</option>
-          <option value="pics/download">Pictures & Downloads</option>
-          <option value="other">Other</option>
-        </select>
-        <!-- random button -->
-        <button class="random-topic" type="button" name="random">Random</button>
+      <div class="nav-logo">
+        <i class="fas fa-heart fa-2x"></i>
       </div>
 
-    </section>
+      <!-- <div class="nav-item">
+        <a href="#content">Home</a>
+      </div> -->
 
-    <section id="submit">
+      <div class="nav-item">
+        <a href="#submit">Submit</a>
+      </div>
 
-    </section>
+      <div class="nav-item">
+        <a href="#footer">Contact</a>
+      </div>
 
-    <section id="footer">
 
-    </section>
+    </nav>
+  </section>
 
-  </body>
+  <section id="content">
+
+    <div class="content-box">
+      <div class="content">
+        <img class="barbie-logo" src="images/barbie-logo-transparent.png" alt="Barbie Logo">
+      </div>
+    </div>
+
+    <div class="content-box">
+      <div class="content">
+        <form id="select-topics" class="" action="/" method="get">
+          <!-- drop down & select button -->
+          <select class="topics" name="topics">
+            <option value="family">Family</option>
+            <option value="pets">Pets</option>
+            <option value="jobs">Jobs</option>
+            <option value="movies/tv">Movies/TV</option>
+            <option value="games">Games</option>
+            <option value="pics/download">Pictures & Downloads</option>
+            <option value="other">Other</option>
+          </select>
+          <button class="select-topic" type="button" name="select-topics">Go</button>
+        </form>
+      </div>
+      <div class="content">
+        <!-- random button -->
+        <button class="random-topic" type="submit" name="random-topic">Random</button>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- submission & corrections -->
+  <section id="submit">
+
+    <div class="content-box section-margin">
+      <form class="" action="index.html" method="post">
+        <button class="submit-buttons" type="submit" name="submissions">Submissions</button><br>
+        <button class="submit-buttons" type="submit" name="corrections">Corrections</button>
+      </form>
+    </div>
+
+  </section>
+
+
+  <!-- footer -->
+  <section id="footer">
+    <footer>
+      <div class="footer-box section-margin">
+
+        <div class="footer-item">
+          <a href="https://github.com/crlycx/barbiepedia">Github</a>
+        </div>
+
+        <div class="footer-item">
+          <a href="mailto:webdevbarbie@gmail.com">Contact</a>
+        </div>
+
+      </div>
+    </footer>
+
+  </section>
+
+</body>
+
 </html>

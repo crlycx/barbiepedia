@@ -1,95 +1,129 @@
-/* wearables */
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Quicksand', sans-serif;
+
+----------- wearables ----------------
 @media (max-width: 42mm) {
-  body {
-    margin: auto;
-    border: 0;
-  }
 
-  .barbie-logo {
-    width: 50px;
-  }
 }
 
-/* mobile phones */
+---------------- mobile phones ----------------
 @media (max-device-width: 812px) {
-  body {
-    margin: auto;
-    border: 0;
-  }
 
-  .barbie-logo {
-    width: 150px;
-  }
 }
 
-/* tablets */
+---------------- tablets ----------------
 @media (max-device-width: 1024px) {
-  body {
-    margin: auto;
-    border: 0;
-  }
 
-  .barbie-logo {
-    width: 350px;
-  }
 }
 
-/* -------------------------laptop media query--------------------- */
-
-/* laptops */
+---------------- laptops ----------------
 @media (max-device-width: 1600px) {
-  body {
-    margin: auto;
-    border: 0;
-  }
 
-  .navigation {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 10px;
-  }
+} */
 
-  .navigation i {
-    color: #EC429A;
-    margin-left: 5px;
-    margin-top: 2px;
-  }
 
-  .navigation a {
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #EC429A;
-    text-decoration: none;
-    font-family: 'Mali', cursive;
-    font-size: 20px;
-  }
+body {
+  margin: auto;
+  border: 0;
+}
 
-  .nav-logo {
-    margin-right: auto;
-  }
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
 
-  .nav-item:hover a {
-    font-size: 22px;
-  }
+.navigation i {
+  color: #EC429A;
+  margin-left: 5px;
+  margin-top: 2px;
+}
 
-  .content-box {
-    display: flex;
-    justify-content: center;
-  }
+.navigation a {
+  padding: 15px 1em;
+  color: #EC429A;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+}
 
-  .barbie-logo {
-    width: 600px;
-    display: block;
-    margin: 5px;
-  }
+.nav-logo {
+  margin-right: auto;
+}
 
-  .topics {
-    position: absolute;
-    margin-top: 26%;
-  }
+.nav-item:hover a {
+  font-size: 22px;
+}
 
-  .random-topic {
-    position: absolute;
-    margin-top: 28%;
-  }
+.content-box {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content {
+  margin: 15px auto;
+}
+
+.barbie-logo {
+  max-width: 75%;
+  margin-top: 8%;
+}
+
+.topics {
+  border: 2px mistyrose solid;
+  padding: 5px 12px;
+  margin: 5px auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25em;
+}
+
+.select-topic {
+  border: 2px mistyrose solid;
+  padding: 5px 12px;
+  margin: 5px auto;
+  background-color: inherit;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25em;
+}
+
+.random-topic {
+  border: 2px mistyrose solid;
+  padding: 5px 12px;
+  background-color: inherit;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25em;
+}
+
+.section-margin {
+  margin-top: 30% !important;
+}
+
+.submit-buttons {
+  border: 2px mistyrose solid;
+  padding: 20px 50px;
+  margin: 5px auto;
+  background-color: inherit;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25em;
+}
+
+.footer-box {
+  display: flex;
+  text-align: center;
+}
+
+.footer-box a {
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #EC429A;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+}
+
+.footer-item {
+  margin: 10% auto;
 }
