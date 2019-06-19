@@ -127,3 +127,25 @@ body {
 .footer-item {
   margin: 10% auto;
 }
+
+/* //////view css////// */
+
+.view-header {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em;
+  padding: 2%;
+  margin: 2%;
+  color: #EC429A;
+}
+
+.topic-view-boxes {
+  font-family: 'Montserrat', sans-serif;
+  font-size:.8em;
+  padding: 2%;
+  margin: 5%;
+}
+
+.topic-view-boxes p {
+  border-bottom: 2px mistyrose solid;
+  padding-bottom: 2%;
+}

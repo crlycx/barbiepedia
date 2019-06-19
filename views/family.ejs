@@ -1,5 +1,20 @@
 <%- include("partials/header") %>
 
-<h1>Family test</h1>
+<header class="view-header"><h1>Family</h1></header>
+
+<div class="topic-view-boxes">
+
+  <%  familyMember.forEach(function(familyMember){ %>
+
+    <h1><%=familyMember.title%></h1>
+    <p>
+    <%=familyMember.content.substring(0, 80) + " ..."%>
+    <a href="/articles/<%=familyMember._id%>">Read More</a>
+    </p>
+
+
+    <% }) %>
+</div>
+
 
 <%- include("partials/footer") %>
