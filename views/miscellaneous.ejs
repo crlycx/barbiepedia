@@ -1,0 +1,20 @@
+<%- include("partials/header") %>
+
+<header class="view-header"><h1>Misc. Facts</h1></header>
+
+<div class="topic-view-boxes">
+
+  <%  miscFacts.forEach(function(miscFacts){ %>
+
+    <h1><%=miscFacts.title%></h1>
+    <p>
+    <%=miscFacts.content.substring(0, 80) + " ..."%>
+    <a href="/articles/<%=miscFacts._id%>">Read More</a>
+    </p>
+
+
+    <% }) %>
+</div>
+
+
+<%- include("partials/footer") %>

@@ -39,6 +39,47 @@ app.get("/family", function(req, res){
   });
 });
 
+app.get("/pets", function(req, res){
+  Article.find({topic: "Pets"}, function(err, foundPet){
+    if (!err) {
+      res.render("pets", {pets:foundPet});
+    } else {
+      console.log(err);
+    }
+  });
+});
+
+app.get("/careers", function(req, res){
+  Article.find({topic: "Careers"}, function(err, foundCareer){
+    if (!err) {
+      res.render("careers", {careers:foundCareer});
+    } else {
+      console.log(err);
+    }
+  });
+});
+
+app.get("/moviesandtv", function(req, res){
+  Article.find({topic: "Movies/TV"}, function(err, foundMoviesTV){
+    if (!err) {
+      res.render("moviesandtv", {moviesTV:foundMoviesTV});
+    } else {
+      console.log(err);
+    }
+  });
+});
+
+app.get("/morefacts", function(req, res){
+  Article.find({topic: "Miscellaneous"}, function(err, foundMisc){
+    if (!err) {
+      res.render("miscellaneous", {miscFacts:foundMisc});
+    } else {
+      console.log(err);
+    }
+  });
+});
+
+
 app.get("/articles/:postID", function(req, res){
 
 const requestedPostId = req.params.postID;

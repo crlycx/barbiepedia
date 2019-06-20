@@ -1,0 +1,20 @@
+<%- include("partials/header") %>
+
+<header class="view-header"><h1>Movies & TV</h1></header>
+
+<div class="topic-view-boxes">
+
+  <%  moviesTV.forEach(function(moviesTV){ %>
+
+    <h1><%=moviesTV.title%></h1>
+    <p>
+    <%=moviesTV.content.substring(0, 80) + " ..."%>
+    <a href="/articles/<%=moviesTV._id%>">Read More</a>
+    </p>
+
+
+    <% }) %>
+</div>
+
+
+<%- include("partials/footer") %>

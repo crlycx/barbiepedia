@@ -1,0 +1,17 @@
+<%- include("partials/header") %>
+
+<header class="view-header"><h1>Careers</h1></header>
+
+<div class="topic-view-boxes">
+
+  <%  careers.forEach(function(career){ %>
+
+    <h1><%=career.title%></h1>
+    <a href="https://barbie.mattel.com/shop/en-us/ba/career-dolls"><img src="images/<%=career.content%>"></a>
+    <p><a href="/articles/<%=career._id%>">Buy Career Barbie Dolls</a></p>
+
+    <% }) %>
+</div>
+
+
+<%- include("partials/footer") %>

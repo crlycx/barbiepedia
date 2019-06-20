@@ -1,0 +1,20 @@
+<%- include("partials/header") %>
+
+<header class="view-header"><h1>Pets</h1></header>
+
+<div class="topic-view-boxes">
+
+  <%  pets.forEach(function(pets){ %>
+
+    <h1><%=pets.title%></h1>
+    <p>
+    <%=pets.content.substring(0, 80) + " ..."%>
+    <a href="/articles/<%=pets._id%>">Read More</a>
+    </p>
+
+
+    <% }) %>
+</div>
+
+
+<%- include("partials/footer") %>
