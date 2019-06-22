@@ -11,21 +11,23 @@
 
     <div class="content-box">
       <div class="content">
-        <form id="select-topics" name="select-topics" class="" action="/" method="get">
+        <form id="topics" name="topics" class="" action="/topics" method="post">
           <!-- drop down & select button -->
           <select class="topics" name="topics">
             <option value="family">Family</option>
             <option value="pets">Pets</option>
-            <option value="jobs">Careers</option>
+            <option value="careers">Careers</option>
             <option value="movies/tv">Movies/TV</option>
-            <option value="games">Miscellaneous</option>
+            <option value="misc">More facts</option>
           </select>
-          <input class="select-topic" type="submit" name="select-topics"></input>
+          <input class="select-topic" type="submit" name="topics" value="Go"></input>
         </form>
       </div>
       <div class="content">
         <!-- random button -->
-        <button class="random-topic" type="submit" name="random-topic">Random</button>
+        <form name="random" class="" action="/random" method="post">
+          <input value="Random" class="random-topic" type="submit" name="random"></input>
+        </form>
       </div>
     </div>
 
@@ -36,9 +38,9 @@
   <section id="submit">
 
     <div class="content-box section-margin">
-      <form class="" action="index.html" method="post">
-        <button class="submit-buttons" type="submit" name="submissions">Submissions</button><br>
-        <button class="submit-buttons" type="submit" name="corrections">Corrections</button>
+      <form id="usersubmits" class="" action="/usersubmits" method="post">
+        <input type="submit" name="usersubmits" class="submit-buttons" value="Submissions"></input>
+        <input type="submit" name="usersubmits" class="submit-buttons" value="Corrections"></input>
       </form>
     </div>
 

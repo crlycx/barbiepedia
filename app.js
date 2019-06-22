@@ -79,7 +79,40 @@ app.get("/morefacts", function(req, res){
   });
 });
 
+app.get("/contact", function(req, res){
+  res.render("contact")
+});
 
+
+//////////// route user select topics ////////////////
+app.post("/topics", function(req, res){
+  if (req.body.topics[0] === "family") {
+    res.redirect("family");
+  } if (req.body.topics[0] === "pets") {
+    res.redirect("pets");
+  } if (req.body.topics[0] === "careers") {
+    res.redirect("careers");
+  } if (req.body.topics[0] === "movies/tv") {
+    res.redirect("moviesandtv");
+  } if (req.body.topics[0] === "misc") {
+    res.redirect("morefacts");
+  } else {
+    res.render("oops");
+  }
+});
+
+///////// routes random topic //////////
+
+app.post("/random", function(req, res){
+  if (req.body.random === "Random") {
+    ///////// fix random redirect //////
+    res.render("oops");
+    ///////////////////////////////////
+  }
+});
+
+
+//////////// route for specific articles ////////////////
 app.get("/articles/:postID", function(req, res){
 
 const requestedPostId = req.params.postID;
@@ -92,6 +125,25 @@ const requestedPostId = req.params.postID;
   });
 
 });
+
+///////////////submissions & corrections routes/////////////////////
+
+app.post("/usersubmits", function(req, res) {
+  if (req.body.usersubmits === "Submissions") {
+    res.redirect("/submissions")
+  } if (req.body.usersubmits === "Corrections") {
+    res.redirect("/corrections")
+  }
+});
+
+app.get("/submissions", function(req, res){
+  res.render("submissions");
+});
+
+app.get("/corrections", function(req, res){
+  res.render("corrections");
+});
+
 
 
 
