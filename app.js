@@ -127,7 +127,7 @@ const requestedPostId = req.params.postID;
 });
 
 ///////////////submissions & corrections routes/////////////////////
-
+////buttons from home page
 app.post("/usersubmits", function(req, res) {
   if (req.body.usersubmits === "Submissions") {
     res.redirect("/submissions")
@@ -135,7 +135,7 @@ app.post("/usersubmits", function(req, res) {
     res.redirect("/corrections")
   }
 });
-
+/////routes for page views
 app.get("/submissions", function(req, res){
   res.render("submissions");
 });
@@ -144,7 +144,10 @@ app.get("/corrections", function(req, res){
   res.render("corrections");
 });
 
-
+////routes for post method from page views
+app.post("/corrections", function(req, res){
+  
+});
 
 
 app.listen(3000, function() {
