@@ -87,17 +87,17 @@ app.get("/contact", function(req, res){
 //////////// route user select topics ////////////////
 app.post("/topics", function(req, res){
   if (req.body.topics[0] === "family") {
-    res.redirect("family");
+    return res.redirect("family");
   } if (req.body.topics[0] === "pets") {
-    res.redirect("pets");
+    return res.redirect("pets");
   } if (req.body.topics[0] === "careers") {
-    res.redirect("careers");
+    return res.redirect("careers");
   } if (req.body.topics[0] === "movies/tv") {
-    res.redirect("moviesandtv");
+    return res.redirect("moviesandtv");
   } if (req.body.topics[0] === "misc") {
-    res.redirect("morefacts");
+    return res.redirect("morefacts");
   } else {
-    res.render("oops");
+    return res.render("oops");
   }
 });
 
@@ -146,7 +146,7 @@ app.get("/corrections", function(req, res){
 
 ////routes for post method from page views
 app.post("/corrections", function(req, res){
-  
+
 });
 
 
