@@ -149,3 +149,18 @@ body {
   border-bottom: 2px mistyrose solid;
   padding-bottom: 2%;
 }
+
+.usersubmit-form {
+  font-family: 'Montserrat', sans-serif;
+  padding: 4%;
+  font-size: 1.2em;
+}
+
+.usersubmit-button {
+  border: 2px mistyrose solid;
+  padding: 2% 5%;
+  margin: 5px auto;
+  background-color: inherit;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25em;
+}
