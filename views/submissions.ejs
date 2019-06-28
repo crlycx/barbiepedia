@@ -4,11 +4,18 @@
 
 <div class="content-box">
   <form class="usersubmit-form" action="mailto:webdevbarbie@gmail.com" method="post">
-    <div class="usersubmit-input">
-      <label for="fname">First name:</label><input type="text" name="fname" placeholder="First name">
+    <div class="usersubmit-box">
+      <label for="fname">First name:</label><input class="usersubmit-input" type="text" name="fname" placeholder="First name">
     </div>
-    <div class="">
-      <label for="lname">Last name:</label><input type="text" name="lname" placeholder="Last name">
+    <div class="usersubmit-box">
+      <label for="lname">Last name:</label><input class="usersubmit-input" type="text" name="lname" placeholder="Last name">
+    </div>
+    <div class="usersubmit-box">
+      <label for="email">email:</label><input class="usersubmit-input" type="text" name="email" placeholder="me@example.com">
+    </div>
+    <div class="usersubmit-box">
+      <label for="submitted-correction-text">Enter correction details here:</label>
+      <textarea class="usersubmit-input" name="submitted-correction-text" rows="8" cols="30"></textarea>
     </div>
     <br>
     <input class="usersubmit-button" type="submit" name="send" value="Submit">
