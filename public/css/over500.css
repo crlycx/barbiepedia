@@ -1,0 +1,28 @@
+.barbie-logo {
+  max-width: 75%;
+  margin-top: 5%;
+}
+
+.content-box {
+  display: block;
+  max-width: 100%;
+  margin: 5% auto;
+  text-align: center;
+}
+
+.section-margin {
+  margin-top: 2% !important;
+}
+
+.submit-buttons {
+  border: 2px mistyrose solid;
+  padding: 20px 50px;
+  margin: 5%;
+  background-color: inherit;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25em;
+}
+
+.footer-item {
+  margin: 20% auto;
+}
